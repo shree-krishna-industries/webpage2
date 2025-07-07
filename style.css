@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: #f9fafb;
+  color: #333;
+}
+#about{
+    height: 200px;
+    width: auto;
+    padding: 20px;
+    text-align: center;
+   
+    background-image: url(./abus.jpg);
+}
+header {
+  background-image: url(./nvbrimg.jpg);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 10px 0;
+  box-shadow: 0 2px 6px rgba(100, 26, 26, 0.1);
+}
+.container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  color: #e2e8f0;
+}
+
+.logo {
+  width: 50px;
+  border-radius: 50%;
+}
+ nav {
+      background-color: #333;
+      color: #fff;
+      
+      position: relative;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-image: url(./nvbrimg.jpg);
+    }
+
+    .name{
+      font-size: 20px;
+      margin-right: 550px;
+      color: #051b4e;
+      font-weight: 900;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: rgb(15, 14, 14);
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 700;
+      transition: color 0.3s;
+    }
+  .nav-links a:hover {
+      color: #5206f7;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+    }
+
+    .hamburger span {
+      height: 3px;
+      width: 25px;
+      background: white;
+    }
+   /* Responsive CSS */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #444;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
+
+
+.hero {
+  background-image: url(./fact.jpg);
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+.section p {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  font-size: 18px;
+}
+
+.dark {
+  background: #FAF6E9;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.card {
+  
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 300px;
+  padding: 20px;
+  text-align: left;
+  color: #f9fafb;
+}
+ #pu{
+    background-image: url(./pu.jpg);
+    width: 300px;
+ }
+ #bnd{
+    background-image: url(./bn2.jpg);
+    background-size: auto;    
+    color: #faf7f7;
+    font-weight: 500px;
+ }
+ #memory{
+    background-image: url(./m3.jpg);
+    background-size: auto;
+     background-repeat: no-repeat;
+     color: #0f172a;
+ }
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.download-btn {
+  background: #0f172a;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.download-btn:hover {
+  background: #1e40af;
+}
+
+.contact {
+  background: #f1f5f9;
+}
+
+.contact a {
+  color: #1e3a8a;
+  text-decoration: none;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+footer {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive for mobile screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .download-btn,
+  .whatsapp-btn {
+    width: 90%;
+    font-size: 18px;
+  }
+}

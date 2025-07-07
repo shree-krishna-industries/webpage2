@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shree Krishna Industries</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ <nav>
+    <div class="nav-container">
+      <img src="./LOGO3.jpg" alt="logo" class="logo">
+      <div class="name">  
+      <p>SHREE KRISHNA INDUSTRIES</p></div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#catalogue">Catalogue</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Right Choice Mattress</h1>
+      <p>Premium mattresses, Pillows and PU Foam Manufacturer in India</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <br>
+    <p>Shree Krishna Industries is dedicated to manufacturing high-quality, durable, and comfortable mattresses and foams. We deliver innovative sleep solutions to customers all over India with trust and satisfaction.</p>
+  </section>
+
+  <section id="products" class="section dark">
+    <h2>Our Product Varieties</h2>
+    <div class="cards">
+      <div class="card" id="pu">
+        <h3>PU Foam</h3>
+        <p>Soft, breathable foam designed for everyday comfort and affordability.</p>
+      </div>
+      <div class="card" id="bnd">
+        <h3>Rebonded Foam</h3>
+        <p>Firm, supportive foam used in orthopedic and heavy-duty mattresses.</p>
+      </div>
+      <div class="card" id="memory">
+        <h3>Memory Foam</h3>
+        <p>Adapts to body shape for pressure relief and luxurious sleep experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="catalogue" class="section">
+    <h2>Catalogue</h2>
+    <p>Download our complete product brochure with detailed specs and pricing.</p>
+    <a class="download-btn" href="https://drive.google.com/file/d/1a_XcVEehgrk6gw_a5Nl7FLL-OwH63qnp/view?usp=drive_link" download>📥 Download Catalogue</a>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact Us</h2>
+    <p>📧 Email: <a href="mailto:shreekrishnaind024@gmail.com">shreekrishnaind024@gmail.com</a></p>
+    <p>📞 WhatsApp: <a href="https://wa.me/919540301090" target="_blank">+91 95403 01090</a></p>
+    <a class="whatsapp-btn" href="https://wa.me/919540301090" target="_blank">💬 Chat on WhatsApp</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Shree Krishna Industries. All rights reserved.</p>
+  </footer>
+
+    <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>
